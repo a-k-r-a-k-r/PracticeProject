@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Post
+from project import settings
 
 # Create your views here.
 
