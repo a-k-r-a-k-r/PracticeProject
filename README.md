@@ -44,6 +44,7 @@ After satisfying all the requirements for the project, Open the terminal in the 
 python checklist.py
 ```
 or
+- 
 ```
 python3 checklist.py
 ```
