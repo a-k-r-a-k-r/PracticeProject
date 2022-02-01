@@ -17,12 +17,64 @@ Since this is just a demo project, authentication is not taken into consideratio
 
 ### Endpoints and Methods
 
-- ``` GET /api/user-list/ ``` 
--     Returns list of all the users in the database with their informations
-- ``` GET user-info/{id}/ ``` Returns the informations retaled to the user with the specified id
-- ``` PUT user-update/{id}/update/ ``` Updates the user information for the user with the specified id
-- ``` POST user-add/ ``` Creates a new user
-- ``` POST user-delete/{id}/ ``` Deletes the user with the specified id from the database
+- ``` GET /api/user-list/ ``` <br />
+Returns list of all the users in the database with their informations
+- ``` GET user-info/{id}/ ``` <br />
+Returns the informations retaled to the user with the specified id
+- ``` PUT user-update/{id}/update/ ``` <br />
+Updates the user information for the user with the specified id
+- ``` POST user-add/ ``` <br />
+Creates a new user
+- ``` POST user-delete/{id}/ ``` <br />
+Deletes the user with the specified id from the database
+
+## Sample JSON response
+```
+{
+    "status": 200,
+    "message": "Success",
+    "data": {
+        "users": [
+            {
+                "id": 1,
+                "username": "akr",
+                "first_name": "myFirstName",
+                "last_name": "myLastName",
+                "email": "akr@myEmail.com",
+                "is_staff": true,
+                "last_login": "2022-01-31",
+                "is_superuser": true,
+                "is_active": true,
+                "date_joined": "2022-01-18"
+            },
+            {
+                "id": 2,
+                "username": "test01",
+                "first_name": "test01FirstName",
+                "last_name": "test01LastName",
+                "email": "",
+                "is_staff": false,
+                "last_login": null,
+                "is_superuser": false,
+                "is_active": true,
+                "date_joined": "2022-01-31"
+            },
+            {
+                "id": 3,
+                "username": "test02",
+                "first_name": "",
+                "last_name": "",
+                "email": "",
+                "is_staff": false,
+                "last_login": null,
+                "is_superuser": false,
+                "is_active": true,
+                "date_joined": "2022-01-31"
+            }
+        ]
+    }
+}
+```
 
 ## Error Responses
 Our API uses conventional HTTP response codes to indicate success or failure of an API request. In general, codes in the 2xx range indicate success, codes in the 4xx range indicate an error that resulted from the provided information (e.g. a required parameter was missing, a charge failed, etc.), and codes in the 5xx range indicate an error with our servers.
