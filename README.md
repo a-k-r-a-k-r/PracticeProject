@@ -15,36 +15,12 @@ https://localhost/api/user-list/
 https://localhost/api/user-list/
 ```
 
-```
-https://localhost/api/user-list/
-```
-
-```
-https://localhost/api/user-list/
-```
-
-```
-https://localhost/api/user-list/
-```
-
-```
-https://localhost/api/user-list/
-```
-
-```
-https://localhost/api/user-list/
-```
-
-```
-https://localhost/api/user-list/
-```
-
 After satisfying all the requirements for the project, Open the terminal in the project folder and run
 ```
 python checklist.py
 ```
 or
-- 
+ 
 ```
 python3 checklist.py
 ```
@@ -77,7 +53,7 @@ Since this is just a demo project, authentication is not taken into consideratio
 
 ### Endpoints and Methods
 
-- GET /api/user-list/
+- ```GET /api/user-list/```
 Returns list of course reviews
 - GET user-info/{id}/
 - PUT user-update/{id}/update/
