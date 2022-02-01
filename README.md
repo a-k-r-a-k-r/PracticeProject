@@ -2,7 +2,7 @@
 
 
 ## Introduction
-This practice project is about implementing CRUD operation on the User model, using Django REST Framework.
+This practice project is about implementing CRUD operations on the User model, using Django REST Framework.
 
 
 ## Getting Started
@@ -18,15 +18,17 @@ Since this is just a demo project, authentication is not taken into consideratio
 ### Endpoints and Methods
 
 - ``` GET /api/user-list/ ``` <br />
-Returns list of all the users in the database with their informations
+  - Returns list of all the users in the database with their informations
 - ``` GET user-info/{id}/ ``` <br />
-Returns the informations retaled to the user with the specified id
+  - Returns the informations retaled to the user with the specified id
 - ``` PUT user-update/{id}/update/ ``` <br />
-Updates the user information for the user with the specified id
+  - Fields: "first_name", "last_name", "email" <br />
+  - Updates the user information for the user with the specified id
 - ``` POST user-add/ ``` <br />
-Creates a new user
+  - Required Fields: "username", "password" <br />
+  - Creates a new user
 - ``` POST user-delete/{id}/ ``` <br />
-Deletes the user with the specified id from the database
+  - Deletes the user with the specified id from the database
 
 ## Sample JSON response
 ```
