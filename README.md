@@ -17,9 +17,10 @@ Since this is just a demo project, authentication is not taken into consideratio
 
 ### Endpoints and Methods
 
-- ```GET /api/user-list/ ``` Returns list of all the users
+- ``` GET /api/user-list/ ``` 
+-     Returns list of all the users in the database with their informations
 - ``` GET user-info/{id}/ ``` Returns the informations retaled to the user with the specified id
-- ``` PUT user-update/{id}/update/ ``` Updated the user info for the user with the specified id
+- ``` PUT user-update/{id}/update/ ``` Updates the user information for the user with the specified id
 - ``` POST user-add/ ``` Creates a new user
 - ``` POST user-delete/{id}/ ``` Deletes the user with the specified id from the database
 
